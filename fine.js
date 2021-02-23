@@ -151,7 +151,7 @@ document.querySelector('#total').addEventListener('click', function(e) {
   let sum = 0;
 
   for(i = 0; i < list.childElementCount; i++) {
-    sum += Number(list.children[i].children[1].textContent);
+    sum += Number(list.children[i].children[2].textContent);
   }
 
   document.querySelector('.result').style.display = 'block';
