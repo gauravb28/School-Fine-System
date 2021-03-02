@@ -135,9 +135,8 @@ document.querySelector('#clear').addEventListener('click', function(e) {
 document.querySelector('.table').addEventListener('click', function(e) {
   if(e.target.parentElement.classList.contains('delete')) {
     e.target.parentElement.parentElement.parentElement.remove();
+    UI.showAlert('Fine Removed', 'success');
   }
-
-  UI.showAlert('Fine Removed', 'success');
 
   Store.removeFromLs(e.target.parentElement.parentElement.parentElement.firstChild.nextElementSibling.textContent);
 
